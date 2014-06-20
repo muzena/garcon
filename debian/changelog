@@ -1,0 +1,169 @@
+garcon (0.3.0-1ubuntu2) trusty; urgency=medium
+
+  * Add fix-icons-for-broken-desktop-files.patch to fix an
+    issue shared with xfce4-panel 4.11
+  * Add not-all-links-are-webpages.patch to stop all links
+    being opened in the web browser
+
+ -- Jackson Doak <noskcaj@ubuntu.com>  Sat, 05 Apr 2014 09:42:24 +1100
+
+garcon (0.3.0-1ubuntu1) trusty; urgency=medium
+
+  * Merge from debian. Remaining changes:
+    - Build using dh-autoreconf.
+    - Build-depend on xfce4-dev-tools and gtk-doc-tools.
+
+ -- Jackson Doak <noskcaj@ubuntu.com>  Mon, 24 Feb 2014 16:33:13 +1100
+
+garcon (0.3.0-1) experimental; urgency=low
+
+  [ Evgeni Golov ]
+  * Correct Vcs-* URLs to point to anonscm.debian.org
+
+  [ Jackson Doak ]
+  * Bump standards version to 3.9.5
+  * debian/rules: Use disable-silent-rules
+  * New upstream release
+  * Update symbols
+
+  [ Yves-Alexis Perez ]
+  * debian/control:
+    - add build-dep on libxfce4ui-1-dev.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 23 Feb 2014 21:05:05 +0100
+
+garcon (0.3.0~0.master.git20131228-0ubuntu1) trusty; urgency=medium
+
+  * New git snapshot
+  * debian/control:
+    - Bump standards version to 3.9.5
+    - Build-depend on libxfce4ui-1-dev (>= 4.10.0)
+  * debian/rules: Use disable-silent-rules
+  * Don't try to install garcon gtk-doc, it's not available in snapshots
+  * Update symbols
+
+ -- Jackson Doak <noskcaj@ubuntu.com>  Wed, 22 Jan 2014 09:55:06 +1100
+
+garcon (0.2.1-1ubuntu3) trusty; urgency=medium
+
+  * Build using dh-autoreconf.
+  * Build-depend on xfce4-dev-tools and gtk-doc-tools.
+
+ -- Matthias Klose <doko@ubuntu.com>  Tue, 24 Dec 2013 09:08:52 +0100
+
+garcon (0.2.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Upload to unstable.
+  * debian/rules:
+    - enable all hardening flags.
+  * debian/libgarcon-1-0-dev.install:
+    - static files are not built anymore, don't try to install them.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 21 May 2013 22:12:35 +0200
+
+garcon (0.2.0-1) experimental; urgency=low
+
+  * New upstream release.
+  * debian/control: revert b-dep to unversioned libxfce4util -dev package, and
+    require >= 4.10.
+
+ -- Lionel Le Folgoc <mrpouit@gmail.com>  Sat, 05 May 2012 09:43:43 +0200
+
+garcon (0.1.12-1+exp1) experimental; urgency=low
+
+  * New upstream release.
+  * debian/copyright: replace CRLFs with LFs…
+
+ -- Lionel Le Folgoc <mrpouit@gmail.com>  Sun, 15 Apr 2012 15:36:53 +0200
+
+garcon (0.1.12-1) unstable; urgency=low
+
+  [ Lionel Le Folgoc ]
+  * New upstream release.
+
+  [ Yves-Alexis Perez ]
+  * debian/rules:
+    - build with --parallel.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 05 May 2012 14:45:29 +0200
+
+garcon (0.1.11-1+exp1) experimental; urgency=low
+
+  [ Lionel Le Folgoc ]
+  * New upstream release.
+  * debian/README.source: dropped, unneeded.
+  * debian/rules: fix path to .la files to ignore.
+  * debian/control: build-dep on libxfce4util6-dev to start using the new API.
+
+  [ Yves-Alexis Perez ]
+  * debian/control:
+    - update standards version to 3.9.3.
+  * debian/rules:
+    - build with --parallel.
+
+ -- Lionel Le Folgoc <mrpouit@gmail.com>  Sun, 08 Apr 2012 16:24:43 +0200
+
+garcon (0.1.11-1) unstable; urgency=low
+
+  [ Lionel Le Folgoc ]
+  * New upstream release.
+  * debian/README.source: dropped, unneeded.
+  * debian/rules: fix path to .la files to ignore.
+
+  [ Yves-Alexis Perez ]
+  * debian/control:
+    - update standards version to 3.9.3.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 01 Apr 2012 14:25:19 +0200
+
+garcon (0.1.10-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/rules:
+    - use debhelper 9 hardening support.
+  * Fix paths for multiarch dirs.
+  * debian/compat bumped to 9.
+  * debian/control:
+    - drop hardening-includes build-dep.
+    - update debhelper build-dep to 9 for hardening support.
+    - add dpkg-dev 1.16.1 build-dep for hardening support.
+    - pre-depends on multiarch-support.
+  * debian/watch: updated, garcon moved to core.
+
+ -- Lionel Le Folgoc <mrpouit@gmail.com>  Sun, 19 Feb 2012 18:59:34 +0100
+
+garcon (0.1.9-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    - add build-dep on libxfce4util.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Mon, 12 Sep 2011 22:59:30 +0200
+
+garcon (0.1.8-1) unstable; urgency=low
+
+  * New upstream release.
+    - remove science toplevel category.                         closes: #315085
+
+ -- Lionel Le Folgoc <mrpouit@gmail.com>  Mon, 20 Jun 2011 22:39:08 +0200
+
+garcon (0.1.7-1) unstable; urgency=low
+
+  [ Lionel Le Folgoc ]
+  * debian/libgarcon-1-0.symbols: added.
+
+  [ Yves-Alexis Perez ]
+  * New upstream release.
+  * Upload to unstable.
+  * debian/control:
+    - remove Emanuele, Simon and Mike from uploaders.
+    - update standards version to 3.9.2.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 19 Apr 2011 16:07:51 +0200
+
+garcon (0.1.5-1) experimental; urgency=low
+
+  * Initial release.                                            Closes: #612090
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 06 Feb 2011 17:05:17 +0100
