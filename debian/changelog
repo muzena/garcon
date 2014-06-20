@@ -1,3 +1,9 @@
+garcon (0.3.0-2linuxmint1) qiana; urgency=medium
+
+  * Don't show System items in the Settings category
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 20 Jun 2014 16:46:10 +0100
+
 garcon (0.3.0-1ubuntu2) trusty; urgency=medium
 
   * Add fix-icons-for-broken-desktop-files.patch to fix an
