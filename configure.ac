@@ -28,9 +28,9 @@ dnl ***************************
 m4_define([garcon_verinfo], [0:0:0])
 m4_define([garcon_version_api_major], [1])
 m4_define([garcon_version_major], [0])
-m4_define([garcon_version_minor], [3])
+m4_define([garcon_version_minor], [4])
 m4_define([garcon_version_micro], [0])
-m4_define([garcon_version_build], [69ff09c])
+m4_define([garcon_version_build], [91228c9])
 m4_define([garcon_version_tag], [])
 m4_define([garcon_version], [garcon_version_major().garcon_version_minor().garcon_version_micro()ifelse(garcon_version_tag(), [git], [garcon_version_tag()-garcon_version_build()], [garcon_version_tag()])])
 
@@ -39,13 +39,18 @@ dnl *** Full debug support for GIT snapshots ***
 dnl ********************************************
 m4_define([garcon_debug_default], [ifelse(garcon_version_tag(), [git], [full], [minimum])])
 
+dnl ****************************
+dnl *** For intltool support ***
+dnl ****************************
+m4_define([intltool_minimum_version], [0.35])
+
 dnl ***************************
 dnl *** Initialize autoconf ***
 dnl ***************************
 AC_COPYRIGHT([Copyright (c) 2007-2011 Jannis Pohlmann <jannis@xfce.org>])
 AC_INIT([garcon], [garcon_version], [http://bugzilla.xfce.org/])
 AC_PREREQ([2.50])
-AC_REVISION([69ff09c])
+AC_REVISION([91228c9])
 AC_CANONICAL_TARGET()
 
 dnl ***************************
@@ -87,7 +92,7 @@ dnl ********************************
 AM_PROG_AS()
 AC_PROG_CC()
 AC_PROG_INSTALL()
-AC_PROG_INTLTOOL([0.31], [no-xml])
+IT_PROG_INTLTOOL([intltool_minimum_version], [no-xml])
 AM_PROG_CC_C_O()
 
 dnl **************************
@@ -113,7 +118,7 @@ dnl AC_CHECK_FUNCS([])
 dnl ******************************
 dnl *** Check for i18n support ***
 dnl ******************************
-XDT_I18N([ar bg bn ca cs da de el en_AU en_GB eo es et eu fi fr gl he hr hu id is it ja kk ko lt lv ms nb nl nn oc pa pl pt pt_BR ro ru sk sl sq sr sv te th tr ug uk uz uz@Latn zh_CN zh_HK zh_TW ])
+XDT_I18N([ar ast bg bn ca cs da de el en_AU en_GB eo es et eu fi fr gl he hr hu id is it ja kk ko lt lv ms nb nl nn oc pa pl pt pt_BR ro ru sk sl sq sr sv te th tr ug uk uz uz@Latn zh_CN zh_HK zh_TW ])
 
 dnl ***********************************
 dnl *** Check for required packages ***

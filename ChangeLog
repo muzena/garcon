@@ -1,3 +1,290 @@
+commit 91228c905e1b6d621dba326bacf35dbe9a1cc15f
+Author: Mișu Moldovan <dumol@l10n.ro>
+Date:   Fri Feb 27 18:30:17 2015 +0100
+
+    I18n: Update translation ro (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 1638cc7ff5554d3892e8bc2cb6c18bfe706f9f1c
+Author: Slavko <linux@slavino.sk>
+Date:   Thu Feb 26 18:30:17 2015 +0100
+
+    I18n: Update translation sk (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit a131a7d64e62f490509c4697d546d19831326e2f
+Author: Anonymous <noreply@xfce.org>
+Date:   Mon Feb 23 12:30:21 2015 +0100
+
+    I18n: Update translation bg (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit ca5be8f2763b0f42304ba6aac0b9345f2728fa3a
+Author: Pablo Roberto Francisco Lezaeta Reyes <prflr88@gmail.com>
+Date:   Sat Feb 21 00:30:17 2015 +0100
+
+    I18n: Update translation es (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 033514aa7fd2a139684f6940215d4898783e5b2b
+Author: Pablo Roberto Francisco Lezaeta Reyes <prflr88@gmail.com>
+Date:   Thu Feb 19 18:30:18 2015 +0100
+
+    I18n: Update translation es (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit ac33ec9b3274b81f2cbcbb6cf797d63a2e8fdf02
+Author: GenghisKhan <genghiskhan@gmx.ca>
+Date:   Mon Dec 29 00:30:08 2014 +0100
+
+    I18n: Update translation he (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit f5098cadd2e734c656cf0b9823918a28059caf8e
+Author: Efstathios Iosifidis <iefstathios@gmail.com>
+Date:   Sat Dec 27 00:30:09 2014 +0100
+
+    I18n: Update translation el (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 504b75ca1a6b14579b6a2bc7ee9a6db4f6ac1001
+Author: Pablo Roberto Francisco Lezaeta Reyes <prflr88@gmail.com>
+Date:   Fri Dec 26 06:30:09 2014 +0100
+
+    I18n: Update translation es (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 69b3b2d9dc088141dea000fab100a019f3a2fbac
+Author: Pablo Roberto Francisco Lezaeta Reyes <prflr88@gmail.com>
+Date:   Fri Dec 26 00:30:09 2014 +0100
+
+    I18n: Update translation es (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 8af1911164872fa7a2e99bee5591775e409248a4
+Author: Urien Desterres <urien.desterres@gmail.com>
+Date:   Wed Dec 24 12:30:09 2014 +0100
+
+    I18n: Update translation fr (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit cbd8faf24f33a49eef4729437a40e944d8e1d45d
+Author: Eric Koegel <eric.koegel@gmail.com>
+Date:   Mon Sep 22 11:17:09 2014 +0300
+
+    Update intltool
+    
+    See https://bugzilla.xfce.org/show_bug.cgi?id=8930 for details.
+
+commit d8f01b81c7bc69cd4f9741e6ec42b66e6a848b9d
+Author: Eric Koegel <eric.koegel@gmail.com>
+Date:   Tue Mar 25 19:59:55 2014 +0300
+
+    Fix menu icons for misconfigured desktop files (Bug 10709)
+    
+    The desktop entry spec says the Icon key in a .desktop file should
+    either not have an extension or provide an absolute path. This patch
+    allows programs which don't conform to that spec to still properly
+    display an icon by checking for the icon name before the extension
+    or if they exist in the pixmaps folder; Same as xfdesktop.
+    This patch also scales all the images down to the configured gtk icon
+    size which is slightly different from xfdesktop because garcon doesn't
+    depend on libexo.
+    Revelant Desktop Entry Spec:
+    http://standards.freedesktop.org/desktop-entry-spec/latest/ar01s05.html
+
+commit a1d5fa46e7c7a9973f3307debdf16198be28c310
+Author: Ḷḷumex03 <tornes@opmbx.org>
+Date:   Sun Oct 26 00:30:12 2014 +0200
+
+    I18n: Update translation ast (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit fdc0c07b1fdb4ecd0d5b4554260669c62a8eff47
+Author: Anonymous <noreply@xfce.org>
+Date:   Thu Sep 18 00:30:09 2014 +0200
+
+    I18n: Update translation de (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 65a793cf40a262b313803e37dcddeb509c1e5ae1
+Author: Nick Schermer <nick@xfce.org>
+Date:   Mon Jul 28 18:31:18 2014 +0200
+
+    Add case insensitive sorting to the menu (bug #10594).
+    
+    The function is called multiple times for each element, so its
+    probably wise to cache the casefolded names at some point if it
+    turns out to be a performance issue.
+
+commit cb5108ab932bd631dd6da993322a67fb4a219841
+Author: Graeme Gott <graeme@gottcode.org>
+Date:   Fri Jul 25 14:14:23 2014 +0200
+
+    Don't force URLs to be opened in a web browser (bug #10212)
+
+commit f55e6b3dfe6ae3336b33a517b64204f0a8194c07
+Author: Yannick Le Guen <leguen.yannick@gmail.com>
+Date:   Thu Jun 19 00:30:09 2014 +0200
+
+    I18n: Update translation fr (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 04b575e224ed2b8826567fa7180ca4a2c976f8a5
+Author: OSWorld <michal.olber@osworld.pl>
+Date:   Mon Jun 2 00:30:12 2014 +0200
+
+    I18n: Update translation pl (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 05925a430b9a2cac9eb2ed14800f8f4529a99963
+Author: Pablo Lezaeta <prflr88@gmail.com>
+Date:   Mon May 19 12:30:10 2014 +0200
+
+    I18n: Update translation es (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit d851b802ce1cb37bef742d1d46afa4543b1010c9
+Author: edsono <edsono@gmail.com>
+Date:   Tue May 6 06:30:09 2014 +0200
+
+    I18n: Update translation eo (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit d66d2987f4bc858a3bb395fe6d8384fdb5f4e6bb
+Author: edsono <edsono@gmail.com>
+Date:   Mon May 5 18:30:09 2014 +0200
+
+    I18n: Update translation eo (97%).
+    
+    33 translated messages, 1 untranslated message.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 796f8db2e75fa912300c1012942723032ece3f66
+Author: haarek <haarektrans@gmail.com>
+Date:   Sat Apr 26 00:30:08 2014 +0200
+
+    I18n: Update translation nb (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 9606abf0f9d9fbd8a8e0a3d1cbb89a98aac67b5b
+Author: Urides <urien.desterres@gmail.com>
+Date:   Thu Apr 17 12:30:09 2014 +0200
+
+    I18n: Update translation fr (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 2cf4f6157bfe8833a2d08dfa3fbc492093e1d53d
+Author: Tornes Llume <l.lumex03.tornes@gmail.com>
+Date:   Sun Apr 13 06:30:09 2014 +0200
+
+    I18n: Update translation ast (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit a9dfeea3d43198766a160179f35576cce25930b4
+Author: Tornes Llume <l.lumex03.tornes@gmail.com>
+Date:   Sat Apr 12 00:30:11 2014 +0200
+
+    I18n: Update translation ast (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 6ea2884d72a8e010eafb8eeaf7dcafd19660123b
+Author: Tornes Llume <l.lumex03.tornes@gmail.com>
+Date:   Fri Apr 11 18:30:11 2014 +0200
+
+    I18n: Update translation ast (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 711f50ff614799ebba433ce8ff91c47e8151eae8
+Author: ప్రవీణ్ ఇళ్ళ <mail2ipn@gmail.com>
+Date:   Fri Apr 11 12:30:09 2014 +0200
+
+    I18n: Update translation te (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 888fc89d79e74dc56e798a96ce747c066ad6c592
+Author: Tornes Llume <l.lumex03.tornes@gmail.com>
+Date:   Wed Apr 9 18:30:14 2014 +0200
+
+    I18n: Add new translation ast (100%).
+    
+    34 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 43a72cc5eb60acc977720066e63d4cb8f101cb85
+Author: Nick Schermer <nick@xfce.org>
+Date:   Sat Feb 22 23:27:39 2014 +0100
+
+    Post release tag bump.
+
 commit 69ff09cf0a9ee3ff9518822614637dc2d4f89ce6
 Author: Nick Schermer <nick@xfce.org>
 Date:   Sat Feb 22 23:26:28 2014 +0100

@@ -4,10 +4,7 @@ export DEB_LDFLAGS_MAINT_APPEND=-Wl,-z,defs -Wl,--as-needed -Wl,-O1
 export DEB_BUILD_MAINT_OPTIONS=hardening=+all
 
 %:
-	dh $@ --parallel --with autoreconf
-
-override_dh_autoreconf:
-	dh_autoreconf xdt-autogen
+	dh $@ --parallel
 
 override_dh_install:
 	dh_install --fail-missing -X .la

@@ -34,12 +34,7 @@
         <Include>
             <Category>Settings</Category>
         </Include>
-	<Exclude>
-            <Or>
-                <Category>Emulator</Category>
-                <Category>System</Category>
-            </Or>
-        </Exclude>
+
         <Layout>
             <Filename>xfce-settings-manager.desktop</Filename>
             <Separator/>

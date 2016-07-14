@@ -1,25 +1,16 @@
-garcon (0.3.0-2linuxmint1) qiana; urgency=medium
+garcon (0.4.0-2) unstable; urgency=medium
 
-  * Don't show System items in the Settings category
+  * Upload to unstable.
 
- -- Clement Lefebvre <root@linuxmint.com>  Fri, 20 Jun 2014 16:46:10 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Wed, 06 May 2015 15:52:08 +0200
 
-garcon (0.3.0-1ubuntu2) trusty; urgency=medium
+garcon (0.4.0-1) experimental; urgency=medium
 
-  * Add fix-icons-for-broken-desktop-files.patch to fix an
-    issue shared with xfce4-panel 4.11
-  * Add not-all-links-are-webpages.patch to stop all links
-    being opened in the web browser
+  [ Mateusz Łukasik ]
+  * New upstream release.
+  * Bump standards version to 3.9.6
 
- -- Jackson Doak <noskcaj@ubuntu.com>  Sat, 05 Apr 2014 09:42:24 +1100
-
-garcon (0.3.0-1ubuntu1) trusty; urgency=medium
-
-  * Merge from debian. Remaining changes:
-    - Build using dh-autoreconf.
-    - Build-depend on xfce4-dev-tools and gtk-doc-tools.
-
- -- Jackson Doak <noskcaj@ubuntu.com>  Mon, 24 Feb 2014 16:33:13 +1100
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 08 Mar 2015 20:22:03 +0100
 
 garcon (0.3.0-1) experimental; urgency=low
 
@@ -38,24 +29,25 @@ garcon (0.3.0-1) experimental; urgency=low
 
  -- Yves-Alexis Perez <corsac@debian.org>  Sun, 23 Feb 2014 21:05:05 +0100
 
-garcon (0.3.0~0.master.git20131228-0ubuntu1) trusty; urgency=medium
+garcon (0.2.1-2) unstable; urgency=medium
 
-  * New git snapshot
-  * debian/control:
-    - Bump standards version to 3.9.5
-    - Build-depend on libxfce4ui-1-dev (>= 4.10.0)
+  [ Evgeni Golov ]
+  * Correct Vcs-* URLs to point to anonscm.debian.org
+
+  [ Jackson Doak ]
+  * Bump standards version to 3.9.5
   * debian/rules: Use disable-silent-rules
-  * Don't try to install garcon gtk-doc, it's not available in snapshots
-  * Update symbols
 
- -- Jackson Doak <noskcaj@ubuntu.com>  Wed, 22 Jan 2014 09:55:06 +1100
+  [ Yves-Alexis Perez ]
+  * debian/rules:
+    - call dh-autoreconf to regenerate config.{guess,sub} and fix FTBFS on
+      ppc64el.                                                  closes: #757334
+    - call xdt-autogen before configure
+  * debian/control:
+    - add build-dep on xfce4-dev-tools, dh-autoreconf, gtk-doc-tools and
+      intltool for all the above.
 
-garcon (0.2.1-1ubuntu3) trusty; urgency=medium
-
-  * Build using dh-autoreconf.
-  * Build-depend on xfce4-dev-tools and gtk-doc-tools.
-
- -- Matthias Klose <doko@ubuntu.com>  Tue, 24 Dec 2013 09:08:52 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 31 Aug 2014 23:15:46 +0200
 
 garcon (0.2.1-1) unstable; urgency=low
 

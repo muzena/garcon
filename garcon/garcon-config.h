@@ -47,7 +47,7 @@ G_BEGIN_DECLS
  * application compile time, rather than from the library
  * linked against at application run time.
  **/
-#define GARCON_MINOR_VERSION 3
+#define GARCON_MINOR_VERSION 4
 
 /**
  * GARCON_MICRO_VERSION:

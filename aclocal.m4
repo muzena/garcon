@@ -697,6 +697,9 @@ if test -z "$DATADIRNAME"; then
     AC_CHECK_FUNC(bind_textdomain_codeset,
       [DATADIRNAME=share], [DATADIRNAME=lib])
     ;;
+    *-*-openbsd*)
+    [DATADIRNAME=share]
+    ;;
     *)
     [DATADIRNAME=lib]
     ;;
@@ -9348,7 +9351,7 @@ m4_ifndef([_LT_PROG_FC],		[AC_DEFUN([_LT_PROG_FC])])
 m4_ifndef([_LT_PROG_CXX],		[AC_DEFUN([_LT_PROG_CXX])])
 
 # nls.m4 serial 5 (gettext-0.18)
-dnl Copyright (C) 1995-2003, 2005-2006, 2008-2013 Free Software Foundation,
+dnl Copyright (C) 1995-2003, 2005-2006, 2008-2014 Free Software Foundation,
 dnl Inc.
 dnl This file is free software; the Free Software Foundation
 dnl gives unlimited permission to copy and/or distribute it,
@@ -9579,21 +9582,6 @@ AC_SUBST([noarch_pkgconfigdir], [$with_noarch_pkgconfigdir])
 m4_popdef([pkg_default])
 m4_popdef([pkg_description])
 ]) dnl PKG_NOARCH_INSTALLDIR
-
-
-# PKG_CHECK_VAR(VARIABLE, MODULE, CONFIG-VARIABLE,
-# [ACTION-IF-FOUND], [ACTION-IF-NOT-FOUND])
-# -------------------------------------------
-# Retrieves the value of the pkg-config variable for the given module.
-AC_DEFUN([PKG_CHECK_VAR],
-[AC_REQUIRE([PKG_PROG_PKG_CONFIG])dnl
-AC_ARG_VAR([$1], [value of $3 for $2, overriding pkg-config])dnl
-
-_PKG_CONFIG([$1], [variable="][$3]["], [$2])
-AS_VAR_COPY([$1], [pkg_cv_][$1])
-
-AS_VAR_IF([$1], [""], [$5], [$4])dnl
-])# PKG_CHECK_VAR
 
 # Copyright (C) 2002-2013 Free Software Foundation, Inc.
 #
@@ -10778,9 +10766,7 @@ AC_SUBST([am__tar])
 AC_SUBST([am__untar])
 ]) # _AM_PROG_TAR
 
-dnl $Id$
-dnl
-dnl Copyright (c) 2002-2006
+dnl Copyright (c) 2002-2015
 dnl         The Xfce development team. All rights reserved.
 dnl
 dnl Written for Xfce by Benedikt Meurer <benny@xfce.org>.
@@ -10808,7 +10794,7 @@ dnl
 
 
 dnl We need recent a autoconf version
-AC_PREREQ([2.53])
+AC_PREREQ([2.60])
 
 
 
@@ -11118,9 +11104,7 @@ AC_DEFUN([XDT_CHECK_LIBXPM_REQUIRE],
 ])
 
 
-dnl $Id$
-dnl
-dnl Copyright (c) 2002-2006
+dnl Copyright (c) 2002-2015
 dnl         The Xfce development team. All rights reserved.
 dnl
 dnl Written for Xfce by Benedikt Meurer <benny@xfce.org>.
@@ -11148,7 +11132,7 @@ dnl
 
 
 dnl We need recent a autoconf version
-AC_PREREQ([2.53])
+AC_PREREQ([2.60])
 
 
 dnl XDT_SUPPORTED_FLAGS(VAR, FLAGS)
@@ -11340,9 +11324,7 @@ AC_DEFUN([XDT_FEATURE_LINKER_OPTS],
   fi
 ])
 
-dnl $Id$
-dnl
-dnl Copyright (c) 2002-2006
+dnl Copyright (c) 2002-2015
 dnl         The Xfce development team. All rights reserved.
 dnl
 dnl Written for Xfce by Benedikt Meurer <benny@xfce.org>.
