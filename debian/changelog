@@ -1,3 +1,9 @@
+garcon (0.4.0-2linuxmint1) sarah; urgency=medium
+
+  * Don't duplicate System items into the Settings category
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 14 Jul 2016 12:29:41 +0200
+
 garcon (0.4.0-2) unstable; urgency=medium
 
   * Upload to unstable.
